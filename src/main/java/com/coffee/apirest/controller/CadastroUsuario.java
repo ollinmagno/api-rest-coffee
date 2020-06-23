@@ -32,7 +32,7 @@ public class CadastroUsuario {
 	}
 	
 	@RequestMapping(value = "/usuarios", method = RequestMethod.POST, 
-	consumes = "applications/json", produces = "applications/json")
+	consumes = "application/json", produces = "application/json")
 	@PostMapping("/usuario")
 	public Usuario cadastraUsuario(@RequestBody Usuario usuario) {
 		return usuarioRepository.save(usuario);
