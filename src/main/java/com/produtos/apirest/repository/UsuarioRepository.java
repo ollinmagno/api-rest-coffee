@@ -2,9 +2,9 @@ package com.produtos.apirest.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.produtos.apirest.models.Produto;
+import com.produtos.apirest.models.Usuario;
 
-public interface ProdutoRepository extends JpaRepository<Produto, Long>{
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
-	Produto findById(long id);
+	Usuario findById(long id);
 }
