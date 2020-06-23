@@ -1,7 +1,6 @@
 package com.produtos.apirest.models;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 import javax.persistence.Entity;
 import javax.persistence.GenerationType;
@@ -10,18 +9,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="TB_PRODUTOS")
-public class Produto implements Serializable {
+@Table(name="usuarios")
+public class Usuario implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	private String nome;
-	
-	private BigDecimal quantidade;
-	private BigDecimal valor;
+	private String usuario;
+	private String senha;
+	private String email;
+	private String numero;
 	
 	public long getId() {
 		return id;
@@ -29,23 +28,29 @@ public class Produto implements Serializable {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
+	public String getUsuario() {
+		return usuario;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
-	public BigDecimal getQuantidade() {
-		return quantidade;
+	public String getSenha() {
+		return senha;
 	}
-	public void setQuantidade(BigDecimal quantidade) {
-		this.quantidade = quantidade;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
-	public BigDecimal getValor() {
-		return valor;
+	public String getEmail() {
+		return email;
 	}
-	public void setValor(BigDecimal valor) {
-		this.valor = valor;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
