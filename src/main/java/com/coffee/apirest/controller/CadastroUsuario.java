@@ -20,6 +20,11 @@ public class CadastroUsuario {
 	@Autowired
 	UsuarioRepository usuarioRepository;
 	
+	@RequestMapping("/")
+	public String index() {
+		return "Hello World!";
+	}
+	
 	@RequestMapping(value = "/usuarios", method = RequestMethod.GET, produces = "applications/json")
 	@GetMapping("/usuarios")
 	public List<Usuario> listaUsuarios(){
