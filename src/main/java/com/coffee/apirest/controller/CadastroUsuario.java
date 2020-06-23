@@ -1,4 +1,4 @@
-package com.produtos.apirest.controller;
+package com.coffee.apirest.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.produtos.apirest.models.Usuario;
-import com.produtos.apirest.repository.UsuarioRepository;
+import com.coffee.apirest.models.Usuario;
+import com.coffee.apirest.repository.UsuarioRepository;
 
 @RestController
 public class CadastroUsuario {

@@ -1,4 +1,4 @@
-package com.produtos.apirest.models;
+package com.coffee.apirest.models;
 
 import java.io.Serializable;
 

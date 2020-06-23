@@ -1,8 +1,8 @@
-package com.produtos.apirest.repository;
+package com.coffee.apirest.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.produtos.apirest.models.Usuario;
+import com.coffee.apirest.models.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
