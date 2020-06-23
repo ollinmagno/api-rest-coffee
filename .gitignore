@@ -29,3 +29,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#Eclipse Project Files
+bin
+target
+.settings
+.classpath
+.project
+application.properties
+
+**/application.properties
